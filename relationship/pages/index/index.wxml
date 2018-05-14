@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='c_top'>
+    <view class="c_t_str">{{msg}}</view>
+    <view class="c_t_result">{{result}}
+      <text class="c_t_result_r" wx:if="{{resultReverse!=''}}">（我是TA的{{resultReverse}}）</text>
+    </view>
+
+  </view>
+  <view class='c_mid'>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{sexList}}" wx:key="{{item.name}}">
+      <radio value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}}
+    </label>
+  </radio-group>
+  </view>
+  <view class="c_bottom">
+    <text wx:for="{{ref}}" data-item="{{item}}" wx:key="{{item.name}}" class="c_b_item" bind:tap="tapItem">
+   {{item.name}}
+    </text>
+    <text class="c_b_item" bind:tap="claer">
+      回退
+    </text>
+    <text class="c_b_item c_allClear" bind:tap="allClaer">
+      清空
+    </text>
+  </view>
+
+
+
+
+  <!-- <text class="">称呼我为：{{resultReverse}}</text> -->
+</view>

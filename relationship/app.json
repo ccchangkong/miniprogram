@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f1f3f3",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "亲戚称呼计算器",
+    "backgroundColor":"#f1f3f3"
+  }
+}
